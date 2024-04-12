@@ -1,0 +1,160 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* menu section */
+
+.primary-header {
+    justify-content: space-between;
+}
+
+.primary-navigation {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-item {
+    padding-inline: 10px;
+}
+
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+
+/* mobile section */
+
+@media (max-width:50em) {
+    .primary-navigation {
+        display: none;
+        flex: none;
+        background: rgb(252, 217, 217);
+        position: fixed;
+        padding: 10px 10px 80px 10px;
+        inset: 0 0 0 40%;
+        border-radius: 20px;
+        height: 288px;
+        width: 548;
+    }
+
+
+    .primary-navigation[data-visible] {
+        display: block;
+        /* position: fixed; */
+    }
+
+    .menu-list {
+        display: block;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .menu-list a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobile-nav-toggle {
+        cursor: pointer;
+        background: none;
+        border: none;
+        display: block;
+    }
+
+    .mobile-nav-toggle .icon-handburger {
+        padding-left: auto;
+    }
+
+    .mobile-nav-toggle .icon-close {
+        display: block;
+    }
+}
+
+.mobile-nav-toggle .icon-close {
+    display: none;
+}
+
+/* form section */
+
+.first-form {
+    padding: 16px;
+    margin-top: 30px;
+}
+
+
+input {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #bbb6b6;
+    border-radius: 10px;
+    background-color: #ededed;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.second-form {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px;
+}
+
+.third-label {
+    padding-right: 30px;
+}
+
+button {
+    background-color: #119da4;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+button:hover {
+    opacity: 0.7;
+    color: azure;
+
+}
